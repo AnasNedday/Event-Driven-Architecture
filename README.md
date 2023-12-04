@@ -63,3 +63,21 @@ private String currency;
     }
 }
  ```
+ ```java
+@RestController
+@RequestMapping(path="/commands/account")
+@AllArgsConstructor
+public class AccountCommandController {
+private CommandGateway commandGateway;
+@PostMapping(path="/create")
+public CompletableFuture<String> createAccount(@RequestBody CreateAccountRequestDTO request){
+CompletableFuture<String> commandResponse=commandGateway.send(new CreateAccountCommand(
+UUID.randomUUID().toString(),
+request.getInitialBalance(),
+request.getCurrency()
+));
+return commandResponse;
+}
+}
+ ```
+
