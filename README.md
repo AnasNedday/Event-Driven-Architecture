@@ -1,5 +1,9 @@
 # Event-Driven-Architecture : 
-
+> Réalisé par : **NEDDAY ANAS** [`Linkedin`](https://www.linkedin.com/in/anas-nedday/) 
+> - Encadreé par : **M.Mohammed Youssefi**  [`Linkedin`](https://www.linkedin.com/in/mohamed-youssfi-3ab0811b/)
+> Configuration du projet :
+> - Version : Java 17
+>
 ### Dependencies : 
 ```xml
 <dependency>
